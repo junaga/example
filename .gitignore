@@ -1,0 +1,4 @@
+*.log
+dist/
+desktop.ini
+.DS_Store
