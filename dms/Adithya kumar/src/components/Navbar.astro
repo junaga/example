@@ -1,82 +1,74 @@
----
-import logo from '../assets/logoImage.png';
-import searchIcon from '../assets/SearchIcon.png';
-import '../styles/styles.css';
----
+<nav class="navbar">
+	<div class="logo-container">
+		<img src="/assets/logoImage.png" alt="logo" width={67} />
+	</div>
 
-<nav class='navbar'>
-    <div class="logo-container">
-        <img src="/assets/logoImage.png" alt="logo" width={67} />
-    </div>
+	<div class="search-container">
+		<form action="" class="search-form">
+			<input
+				class="search-input"
+				type="text"
+				placeholder="Search a album of your choice"
+			/>
+			<button class="searchbtn">
+				<img src="/assets/SearchIcon.png" alt="search" width={10} />
+			</button>
+		</form>
+	</div>
 
-    <div class="search-container">
-        <form action="" class='search-form'>
-            <input class ='search-input' type="text" placeholder='Search a album of your choice' />
-            <button class="searchbtn">
-                <img 
-                    
-                    src="/assets/SearchIcon.png"
-                    alt="search" 
-                    width={10} 
-                />
-            </button>
-        </form>
-    </div>
-
-    <div class="feedback-button">
-        <button class="feedbackbtn">give feedback</button>
-    </div>
+	<div class="feedback-button">
+		<button class="feedbackbtn">give feedback</button>
+	</div>
 </nav>
+
 <style>
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-primary);
-    height: 78px;
-    width: 100%;
-    padding: 0px 32px;
-}
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--color-primary);
+		height: 78px;
+		width: 100%;
+		padding: 0px 32px;
+	}
 
-.feedbackbtn {
-    display: inline-flex;
-    padding: 10px 16px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 12px;
-    border: 1px solid var(--Primary-400, #34C94B);
-    background: #121212;
-    color: var(--color-primary);
-    text-transform: capitalize;
-}
+	.feedbackbtn {
+		display: inline-flex;
+		padding: 10px 16px;
+		align-items: flex-start;
+		gap: 10px;
+		border-radius: 12px;
+		border: 1px solid var(--Primary-400, #34c94b);
+		background: #121212;
+		color: var(--color-primary);
+		text-transform: capitalize;
+	}
 
-.search-container{
-    height: 78px;
-    padding: 10px 16px;
-    width: 636px;
-}
+	.search-container {
+		height: 78px;
+		padding: 10px 16px;
+		width: 636px;
+	}
 
+	.search-form {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+	}
 
-.search-form{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-}
+	.search-input {
+		width: 80%;
+		height: 37px;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+	}
 
-
-.search-input{
-    width: 80%;
-    height: 37px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-.searchbtn{
-    width: 10%;
-    height: 37px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
+	.searchbtn {
+		width: 10%;
+		height: 37px;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
 </style>

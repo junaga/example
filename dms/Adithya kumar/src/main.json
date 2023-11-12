@@ -1,0 +1,11 @@
+{
+	"title": "Welcome to Astro.",
+	"endpoints": {
+		"top": "https://qtify-backend-labs.crio.do/albums/top",
+		"new": "https://qtify-backend-labs.crio.do/albums/new",
+
+		"album": "https://qtify-backend-labs.crio.do/album/{slug}",
+		"songs": "https://qtify-backend-labs.crio.do/songs",
+		"genres": "https://qtify-backend-labs.crio.do/genres"
+	}
+}
