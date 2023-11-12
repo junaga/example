@@ -1,0 +1,50 @@
+---
+interface Props {
+    title : string;
+    tagline : string;
+}
+
+const { title, tagline } = Astro.props;
+---
+
+<div class="hs-container">
+    <div class="hs-content">
+        <div>
+            <h1>{title}</h1>
+            <h1>{tagline}</h1>
+        </div>
+        <div class="hs-img-frame">
+            <img src="/assets/headphone.png" class="hs-img"/>
+        </div>
+    </div>
+</div>
+<style>
+.hs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 272px;
+    width: 100%;
+    background-color: var(--css-black);
+}
+
+.hs-content {
+    display: flex;
+    align-items: center;
+    color: var(--css-white);
+}
+
+.hs-content h1 {
+    text-align: center;
+}
+
+.hs-img-frame {
+    width: 212px;
+    height: 212px;
+}
+
+.hs-img {
+    width: 100%;
+    height: 100%;
+}
+</style>
