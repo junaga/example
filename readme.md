@@ -15,3 +15,22 @@ However, it is possible to get a guranteed `fraction` of `balance`, where `fract
 ## `$ python ./port-scanner.py`
 
 Find random servers on the internet. Generates a random IPv4 address and connects to TCP ports 1-1023.
+
+## `$ python ./game-of-life.py`
+
+```
+conways game of life cli
+
+usage:
+  game [OPTIONS] [COORDINATE ...]
+
+COORDINATE        alive cells in the format X/Y
+
+options:
+  --random  PERC    percentage of random alive cells
+  --speed   SPEED   simulation speed, default: 1
+
+examples:
+  game 1/0 1/1 1/2
+  game --random 20 --speed 100
+```
