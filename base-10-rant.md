@@ -1,3 +1,9 @@
+## EDIT
+
+**I was wrong**, base-6 is mid (average). base-2 positional notation, or binary, is the best numeral system. Watch [this 1 hour video](https://www.youtube.com/watch?v=rDDaEVcwIJM) instead of reading my failure.
+
+---
+
 ## Decimal sucks
 
 Decimal, is a base-10 positional numeral writing system. It originated from humankind counting in batches of 10, using 10 fingers to reference count.
